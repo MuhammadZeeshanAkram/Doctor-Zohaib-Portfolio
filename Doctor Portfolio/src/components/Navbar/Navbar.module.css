@@ -1,66 +1,66 @@
-@import"../../vars.css";
+@import "../../vars.css";
 
-.navbar{
-    position:relative;
-    display:flex;
+.navbar {
+    position: relative;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 61px;
     z-index: 2;
-    margin:0 10%;
+    margin: 0 10%;
 }
-.title{
+
+.title {
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text);
 }
-.menu{
-    display: flex;
 
-}
-.menuItems{
+.menu {
     display: flex;
-    gap:47px;
+    align-items: center;
+}
+
+.menuBtn {
+    display: none; /* Hide the menu button by default */
+    cursor: pointer;
+}
+
+.menuItems {
+    display: flex;
+    gap: 47px;
     list-style: none;
 }
-.menuItems a{
+
+.menuItems a {
     text-decoration: none;
     color: var(--color-text);
     font-size: 25px;
-    
 }
+
 @media screen and (max-width: 830px) {
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
+    .menuBtn {
+        display: block; /* Show the menu button on smaller screens */
     }
-    .menu{
-        position: absolute;
-        right: 0;
-        margin-right:10%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap:11px;
-        z-index: 3;
-    }
-    .menuBtn{
-        display: block;
-        cursor: pointer;
-    }
-    .menuItems{
-        display: none;
+
+    .menuItems {
+        display: none; /* Hide the menu items by default on smaller screens */
         flex-direction: column;
         align-items: center;
-        gap:13px;
+        gap: 13px;
         border-radius: 10px;
         background: rgb(25,55,109);
-        background: linear-gradient(0deg,rgba(25,55,109,0.2) 0%,rgba(25,55,109,1) 100%);
+        background: linear-gradient(0deg, rgba(25,55,109,0.2) 0%, rgba(25,55,109,1) 100%);
         padding: 24px 33px;
         box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+        position: absolute;
+        top: 100%; /* Position the menu items below the navbar */
+        right: 10%; /* Align with the navbar */
+        z-index: 3;
     }
-    .menuOpen{
-        display: flex;
-        z-index: 1;
+
+    .menuOpen {
+        display: flex; /* Show the menu items when the menu is open */
     }
 }
