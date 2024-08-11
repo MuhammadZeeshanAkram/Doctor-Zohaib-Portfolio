@@ -1,105 +1,166 @@
-@import"../../vars.css";
+@import "../../vars.css";
 
-.container{
-    position:relative;
+.container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-top: 49px;
-    z-index:1;
-    margin-left: 10%;
-    margin-right: 10%;
+    z-index: 1;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.479) 0%, rgba(0, 0, 0, 0.604) 70%);
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color:var(--color-text);
-    z-index:1;
+    color: var(--color-text);
+    z-index: 1;
+   
 }
 
-.title{
-    font-size: 72px;
-    font-weight: 900;
-    margin-bottom: 33px;
+.title {
+    letter-spacing: 5px;
+    font-size: 33px;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 40px;
     font-family: var(--font-roboto);
-    background: linear-gradient(90deg,rgba(255,255,255,1) 70%, rgba(255,255,255,0)120%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-.description{
-    font-size: 30px;
-    font-family: var(--font-roboto);
-    margin-bottom: 52px;
 
+.description {
+    margin-left: 50px;
+    margin-right: 160px;
+    font-size: 22px;
+    font-family: var(--font-roboto);
+    margin-bottom: 80px;
+    font-weight: 800;
+    margin-top: -10px;
 }
 
-.contactBtn{
+.buttonContainer {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the "Read Biography" button and the social buttons */
+}
+
+.readBioBtn {
     text-decoration: none;
     background-color: var(--color-primary);
-    color:var(--color-text);
+    color: var(--color-text);
     padding: 17px 26px;
     border-radius: 100px;
-    font-size: 30px;
-    font-weight: 600;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
-
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
-.heroImg{
-    width:50%;
+
+.socialButtons {
+    display: flex;
+    gap: 10px; /* Space between the social buttons */
+}
+
+.socialButtons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust the size of the circular buttons */
+    height: 40px; /* Adjust the size of the circular buttons */
+    border-radius: 50%;
+    background-color: var(--color-primary); /* Change as needed */
+    color: var(--color-text); /* Change as needed */
+    font-size: 18px; /* Adjust icon size */
+    text-decoration: none;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+}
+
+.socialButtons a:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Change on hover */
+}
+
+.bioContent {
+    margin-top: 20px;
+    background-color: rgba(13, 14, 22, 0.359);
+    animation: slideDown 0.5s ease-out;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.heroImg {
+    width: 50%;
     z-index: 1;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-@keyframes floating{
-     0%{
-        transform: translate(0,0px);
-     }
-     50%{
-        transform: translate(0,10px);
-     }
-     100%{
-        transform: translate(0,-0px);
-     }
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
 }
-.topblur{
+
+.topblur {
     position: absolute;
     width: 50vw;
     height: 50vw;
     min-width: 350px;
     min-height: 350px;
-    top:-128px;
+    top: -128px;
     left: 10vw;
-    border-radius:764px;
-    background: rgba(25,55,109,0.7);
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
     filter: blur(100px);
     z-index: 0;
-
 }
 
-.bottomblur{
+.bottomblur {
     position: absolute;
     width: 70vw;
     height: 50vw;
     min-width: 250px;
     min-height: 350px;
-    top:246px;
+    top: 246px;
     right: -25vw;
-    border-radius:764px;
-    background: rgba(25,55,109,0.7);
+    border-radius: 764px;
+    background: rgba(25, 55, 109, 0.7);
     filter: blur(100px);
     z-index: 0;
-    
 }
+
 @media screen and (max-width: 830px) {
-    .container{
+    .container {
         flex-direction: column-reverse;
         align-items: center;
     }
     
-    .content{
+    .content {
         align-items: center;
     }
 }

@@ -7,19 +7,35 @@
     justify-content: space-between;
     padding-top: 61px;
     z-index: 2;
-    margin: 0 10%;
+    margin: 0 5%;
+    
 }
 
 .title {
-    font-size: 30px;
-    font-weight: 600;
+    display: flex;
+    gap: 5px; /* Add some spacing between the words */
+    margin-right: 30px;
     text-decoration: none;
+}
+
+.title span {
+    font-size: 18px;
+    font-weight: 600;
     color: var(--color-text);
+    text-transform: uppercase; /* Makes the entire text uppercase */
+    display: inline-block;
+    line-height: 1;
+}
+
+.title span::first-letter {
+    font-size: 1.5em; /* Larger first letter */
+    font-weight: bold; /* Optional: Make the first letter bold */
 }
 
 .menu {
     display: flex;
     align-items: center;
+    margin-left: auto; /* Pushes the menu to the right */
 }
 
 .menuBtn {
@@ -62,5 +78,10 @@
 
     .menuOpen {
         display: flex; /* Show the menu items when the menu is open */
+    }
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
     }
 }
