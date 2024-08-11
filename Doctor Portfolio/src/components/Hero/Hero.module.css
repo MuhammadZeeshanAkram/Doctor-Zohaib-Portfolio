@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    align-items: flex-start;
     color: var(--color-text);
     z-index: 1;
    
@@ -92,6 +93,7 @@
     padding: 20px;
     margin-left: 50px;
     margin-right: 50px;
+    font-size: 20px;
 }
 
 @keyframes slideDown {
@@ -106,13 +108,18 @@
 }
 
 .heroImg {
-    width: 50%;
+    max-width: 100%;   /* Scale the image with the container's width */
+    height: auto;      /* Maintain aspect ratio */
+    flex-shrink: 0;    /* Prevent the image from shrinking */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio within the container */
     z-index: 1;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
+
 
 @keyframes floating {
     0% {
@@ -162,5 +169,8 @@
     
     .content {
         align-items: center;
+    }
+    .heroImg {
+        max-width: 80%; /* Adjust as needed for smaller screens */
     }
 }

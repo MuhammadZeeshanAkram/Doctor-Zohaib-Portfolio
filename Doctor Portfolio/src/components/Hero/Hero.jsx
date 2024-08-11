@@ -16,7 +16,7 @@ export const Hero = () => {
                         className={styles.readBioBtn}
                         onClick={() => setBioOpen(!bioOpen)}
                     >
-                        {bioOpen ? 'Hide Biography' : 'Read Biography'}
+                        {bioOpen ? 'Hide' : 'About Me'}
                     </button>
                     <div className={styles.socialButtons}>
                         <a href="mailto:zohaibbhai@gmail.com" className={styles.mailBtn}>📧</a>
@@ -28,13 +28,16 @@ export const Hero = () => {
                 
                 {bioOpen && (
                     <div className={styles.bioContent}>
-                        <p><strong>Dr. Syed Zohaib Maroof Hussain, MBBS, MSc ENT, MRCS, MRCOphth</strong></p>
+                       <h2>Dr. Syed Zohaib Maroof Hussain, MBBS, MSc ENT, MRCS, MRCOphth</h2>
 
-<p>Dr. Syed Zohaib Maroof Hussain is a dedicated and accomplished <strong>Otolaryngologist (ENT Surgeon)</strong> with a strong foundation in both surgical practice and academic excellence. He completed his MBBS from <strong>Liaquat University of Medical & Health Sciences (LUMHS)</strong> in Jamshoro, Pakistan, where he developed a keen interest in the field of ENT. Driven by a passion for furthering his expertise, he pursued an MSc in ENT, Head & Neck Surgery at <strong>Anglia Ruskin University</strong> in Chelmsford, UK.</p>
+<p>Dr. Syed Zohaib Maroof Hussain is a highly skilled and accomplished Otolaryngologist (ENT Surgeon) with a robust academic background and extensive hands-on surgical experience. He earned his <strong>MBBS</strong> from <em>Liaquat University of Medical & Health Sciences (LUMHS)</em> in Jamshoro, Pakistan, where his profound interest in the field of ENT was first ignited. Driven by a passion for surgical excellence and a commitment to patient care, he pursued further specialization, obtaining an <strong>MSc in ENT, Head & Neck Surgery</strong> from <em>Anglia Ruskin University</em> in Chelmsford, UK.</p>
 
-<p>Dr. Hussain is currently serving as a <strong>Core Surgical Trainee at the University Hospitals of Leicester NHS Trust</strong>, where he is gaining invaluable experience in Otolaryngology. His commitment to the field is evident through his successful completion of the MRCS (Membership of the Royal College of Surgeons) and MRCOphth (Membership of the Royal College of Ophthalmologists) qualifications in the UK.</p>
+<p>Currently, Dr. Hussain is serving as a <strong>Core Surgical Trainee</strong> at the <em>University Hospitals of Leicester NHS Trust</em>, where he continues to gain invaluable experience in Otolaryngology. His dedication to his profession is underscored by his successful attainment of the <strong>MRCS (Membership of the Royal College of Surgeons)</strong> and <strong>MRCOphth (Membership of the Royal College of Ophthalmologists)</strong> qualifications in the UK, reflecting his broad expertise in both surgical disciplines.</p>
 
-<p>With a strong academic background and hands-on surgical experience, Dr. Hussain is well on his way to becoming a leading specialist in Otolaryngology. He is deeply committed to providing the highest quality of care to his patients and is continuously seeking opportunities to enhance his skills and knowledge in the ever-evolving field of ENT surgery.</p>
+<p>Dr. Hussain is not only committed to advancing his surgical skills but is also deeply engaged in the academic aspects of his field. He is recognized for his ability to integrate cutting-edge research with clinical practice, ensuring that his patients receive the most effective and up-to-date treatments. His journey in medicine is marked by a relentless pursuit of knowledge and a dedication to the highest standards of patient care.</p>
+
+<p>With a solid foundation in both clinical practice and academic research, Dr. Hussain is poised to become a leading figure in Otolaryngology. He is continually seeking new opportunities to expand his expertise, staying at the forefront of developments in ENT surgery. His approach to patient care is holistic, focusing on both the physical and emotional well-being of his patients, and he is committed to delivering the best possible outcomes for those under his care.</p>
+
 
                     </div>
                 )}
