@@ -5,7 +5,7 @@
     "startDate": "October 2024",
     "endDate": "October 2030",
     "experiences": [],
-    "imageSrc": "history/health_education_west_midlands.png"
+    "imageSrc": "history/health_education_west_midlands.jpg"
   },
   {
     "role": "Teaching and Research Fellow ST3 in ENT",
@@ -89,7 +89,7 @@
     "experiences": [
         "Additional skills: PCI, central line, PICC line, angiography"
     ],
-    "imageSrc": "history/tabba_heart_institute.png"
+    "imageSrc": "history/tabba_heart_institute.jpg"
   },
   {
     "role": "Demonstrator (Physiology)",
@@ -101,7 +101,7 @@
         "Actively involved in examination department including designing theory and OSPE papers for 1st & 2nd year",
         "Conducted online lectures during COVID-19"
     ],
-    "imageSrc": "history/lcmd_jsmu.png"
+    "imageSrc": "history/lcmd_jsmu.jpg"
   },
   {
     "role": "Research Fellow",
@@ -133,7 +133,7 @@
     "experiences": [
         "Wrote and published one research article on the prevalence of typhoid fever in Karachi, Pakistan"
     ],
-    "imageSrc": "history/essa_laboratory.png"
+    "imageSrc": "history/essa_laboratory.jpg"
   },
   {
     "role": "Foundation Year",
@@ -147,6 +147,6 @@
         "Dermatology",
         "Oncology & Hematology"
     ],
-    "imageSrc": "history/jpmc.png"
+    "imageSrc": "history/jpmc.jpg"
   }
 ]
