@@ -101,20 +101,40 @@
 /* Media query for screens 830px or smaller */
 @media screen and (max-width: 830px) {
     .showMoreBtn {
-        width: 95%;
-        height: 50px;
-        font-size: 18px;
-        padding: 10px 20px;
+        background-color: var(--color-primary-dark);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 20px;
+    width: 95%;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     }
+}
+.showMoreBtn:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.05);
 }
 
 /* Media query for screens 480px or smaller */
 @media screen and (max-width: 480px) {
     .showMoreBtn {
-        width: 95%px;
+        background-color: var(--color-primary-dark);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 24px;
+        font-size: 20px;
+        width: 95%;
         height: 50px;
-        font-size: 16px;
-        padding: 8px 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
     }
 }
 
