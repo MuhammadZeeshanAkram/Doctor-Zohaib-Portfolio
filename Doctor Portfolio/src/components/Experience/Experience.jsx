@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Experience.module.css';
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 import history from '../../data/history.json';
 import { getImageUrl } from '../../utils';
 
@@ -18,7 +14,6 @@ export const Experience = () => {
 
   return (
     <section className={styles.container} id='experience'>
-<<<<<<< Updated upstream
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
         <ul className={styles.history}>
@@ -42,37 +37,6 @@ export const Experience = () => {
             </button>
           </li>
         </ul>
-=======
-      <h2 className={styles.title} >Experience</h2>
-      <div className={styles.content} >
-         
-         <ul className={styles.history} id='experience'>
-          {
-            history.map((historyItem,id)=>{
-              return <li key={id} className={styles.historyItem} >
-                <img src={getImageUrl(historyItem.imageSrc)} alt={`${historyItem.organisation} Logo`} />
-                <div className={styles.historyItemDetails} >
-                  <h3>
-                    {`${historyItem.role} , ${historyItem.organisation}`}
-                  </h3>
-                  <p>
-                  {`${historyItem.startDate} - ${historyItem.endDate}`}
-                  </p>
-                  <ul>
-                    {historyItem.experiences.map((experience,id)=>{
-                      return <li key={id}>
-                        {experience}
-                      </li>
-                    })}
-                  </ul>
-                </div>
-              </li>
-            })
-          }
-         </ul>
-
-
->>>>>>> Stashed changes
       </div>
     </section>
   );
