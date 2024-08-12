@@ -83,6 +83,8 @@
     color: white;
     border: none;
     border-radius: 5px;
+    margin-left: 2.5%;
+    margin-right: 5%;
     padding: 12px 24px;
     font-size: 20px;
     width: 95%;
@@ -101,12 +103,15 @@
 /* Media query for screens 830px or smaller */
 @media screen and (max-width: 830px) {
     .showMoreBtn {
-        background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-dark);
     color: white;
     border: none;
     border-radius: 5px;
     padding: 12px 24px;
     font-size: 20px;
+    margin-left: 2.5%;
+    margin-right: 5%;
+    
     width: 95%;
     height: 50px;
     cursor: pointer;
@@ -135,6 +140,8 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         transition: background-color 0.3s ease, transform 0.3s ease;
+        margin-left: 2.5%;
+    margin-right: 5%;
     }
 }
 
