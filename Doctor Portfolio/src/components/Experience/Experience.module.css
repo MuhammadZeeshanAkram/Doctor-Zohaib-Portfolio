@@ -68,6 +68,56 @@
     list-style-type: disc;
     margin-left: 10px;
 }
+.historyContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.showMoreWrapper {
+    display: flex;
+    
+    margin-top: 20px; /* Adds some spacing above the button */
+}
+.showMoreBtn {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 20px;
+    width: 95%;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.showMoreBtn:hover {
+    background-color: var(--color-primary-dark);
+    transform: scale(1.05);
+}
+
+/* Media query for screens 830px or smaller */
+@media screen and (max-width: 830px) {
+    .showMoreBtn {
+        width: 95%;
+        height: 50px;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+/* Media query for screens 480px or smaller */
+@media screen and (max-width: 480px) {
+    .showMoreBtn {
+        width: 95%px;
+        height: 50px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
 
 /* Media query for screens 830px or smaller */
 @media screen and (max-width: 830px) {
@@ -91,4 +141,5 @@
     .historyItem img {
         margin-bottom: 16px; /* Add some space below the image */
     }
+    
 }
