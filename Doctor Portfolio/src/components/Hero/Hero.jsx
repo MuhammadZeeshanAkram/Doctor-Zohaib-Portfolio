@@ -29,22 +29,24 @@ export const Hero = () => {
                 <p className={styles.description}>
                     MBBS (Dow University of Health Sciences), MRCS(Ed) ENT (Royal College of Surgeons of Edinburgh), PLAB (General Medical Council, UK), USMLE Step 2 CS (Educational Commission for Foreign Medical Graduates, USA)
                 </p>
-                
-                <div className={styles.buttonContainer}>
-                    <button
-                        className={styles.readBioBtn}
-                        onClick={() => setBioOpen(!bioOpen)}
-                    >
-                        {bioOpen ? 'Hide' : 'Testimonial'}
-                    </button>
-                    <div className={styles.actionButtons}>
+                <div className={styles.actionButtons}>
                         <button className={styles.downloadCvBtn} onClick={handleDownloadCV}>
                             Download CV
                         </button>
                         <button className={styles.sendMessageBtn} onClick={handleSendMessage}>
-                            Send Message
+                            Send Message   →
                         </button>
                     </div>
+                    
+                <div className={styles.buttonContainer}>
+                <p>Dr. Syed Zohaib Maroof Hussain is a British-trained ENT Surgeon specializing in advanced Otolaryngology techniques, currently based in Leicester, UK.</p>
+                    <button
+                        className={styles.readBioBtn}
+                        onClick={() => setBioOpen(!bioOpen)}
+                    >
+                        {bioOpen ? 'Hide' : 'Testimonial  →'}
+                    </button>
+                    
                 </div>
                 
                 {bioOpen && (
