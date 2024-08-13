@@ -56,11 +56,20 @@
 .aboutItem p{
     font-size: 25px;
 }
-.additionalInfo {
+.additionalInfo{
+    letter-spacing: 2px;
     font-size: 20px;
+}
+.additionalInfo strong{
+    font-size: 25px;
     margin-top: 10px;
+    margin-left: 5px;
+    
+    
     /* Add more styling as needed */
   }
+  
+  
 @media screen and (max-width: 830px) {
     .container{
         flex-direction: column-reverse;

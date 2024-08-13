@@ -15,17 +15,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    align-items: flex-start;
     color: var(--color-text);
     z-index: 1;
-   
 }
 
 .title {
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     font-size: 33px;
     font-weight: 700;
-    margin-left: 40px;
+    margin-left: 90px;
     margin-top: 100px;
     margin-bottom: 40px;
     font-family: var(--font-roboto);
@@ -40,15 +38,16 @@
     font-size: 22px;
     font-family: var(--font-roboto);
     margin-bottom: 80px;
-    font-weight: 800;
+    font-weight: 500;
     margin-top: -10px;
+    letter-spacing: 2px;
 }
 
 .buttonContainer {
     margin-left: 50px;
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between the "Read Biography" button and the social buttons */
+    gap: 10px; /* Space between the "Read Biography" button and the action buttons */
 }
 
 .readBioBtn {
@@ -60,29 +59,32 @@
     font-size: 20px;
     font-weight: 500;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.socialButtons {
-    display: flex;
-    gap: 10px; /* Space between the social buttons */
-}
-
-.socialButtons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px; /* Adjust the size of the circular buttons */
-    height: 40px; /* Adjust the size of the circular buttons */
-    border-radius: 50%;
-    background-color: var(--color-primary); /* Change as needed */
-    color: var(--color-text); /* Change as needed */
-    font-size: 18px; /* Adjust icon size */
-    text-decoration: none;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.socialButtons a:hover {
+.readBioBtn:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Change on hover */
+}
+
+.actionButtons {
+    display: flex;
+    gap: 10px; /* Space between the action buttons */
+}
+
+.actionButtons button {
+    background-color:transparent;
+    color: var(--color-text);
+    padding: 10px 20px;
+    
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actionButtons button:hover {
     background-color: rgba(0, 0, 0, 0.7); /* Change on hover */
 }
 
@@ -109,7 +111,7 @@
 
 .heroImg {
     max-width: 100%;   /* Scale the image with the container's width */
-    height: auto;      /* Maintain aspect ratio */
+    height: 20%;      /* Maintain aspect ratio */
     flex-shrink: 0;    /* Prevent the image from shrinking */
     object-fit: contain; /* Ensure the image maintains its aspect ratio within the container */
     z-index: 1;
@@ -117,9 +119,8 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    border-radius: 50%;
 }
-
-
 
 @keyframes floating {
     0% {
