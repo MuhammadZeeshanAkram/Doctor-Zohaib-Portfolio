@@ -32,6 +32,10 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+.title p {
+    font-size: 20px; /* Adjust size as needed */
+    margin: 0; /* Remove default margin if needed */
+}
 
 .description {
     margin-left: 60px;
