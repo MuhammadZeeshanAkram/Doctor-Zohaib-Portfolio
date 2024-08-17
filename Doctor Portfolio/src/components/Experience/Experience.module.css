@@ -2,7 +2,7 @@
 
 .container {
     color: var(--color-text);
-    margin-top: 79px;
+    margin-top: 30px;
     margin-left: 5%;
 }
 
@@ -19,14 +19,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 14px;
+    margin-top: 9px;
 }
 
 .history {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
 }
 
 .historyItem {
@@ -37,7 +37,7 @@
     background: #19376d;
     background: linear-gradient(90deg, #19376d 0%, rgba(25,55,109,0) 100%);
     border-radius: 10px;
-    padding: 24px;
+    padding: 15px;
 }
 
 .historyItem img {
@@ -52,19 +52,19 @@
 }
 
 .historyItemDetails h3 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 550;
 }
 
 .historyItemDetails p {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 300;
 }
 
 .historyItemDetails ul {
     margin-top: 6px;
     list-style-position: inside;
-    font-size: 25px;
+    font-size: 17px;
     list-style-type: disc;
     margin-left: 10px;
 }
@@ -108,10 +108,10 @@
     border: none;
     border-radius: 5px;
     padding: 12px 24px;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 2.5%;
     margin-right: 5%;
-    
+    transition: background-color 0.3s ease, transform 0.3s ease;
     width: 95%;
     height: 50px;
     cursor: pointer;
