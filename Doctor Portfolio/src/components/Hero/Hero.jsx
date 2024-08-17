@@ -25,57 +25,55 @@ export const Hero = () => {
                     ENT SURGEON
                     <p>(Specialist in Ear, Nose, and Throat Surgery)</p>
                 </h1>
-                
+
                 <p className={styles.description}>
                     MBBS (Dow University of Health Sciences), MRCS(Ed) ENT (Royal College of Surgeons of Edinburgh), PLAB (General Medical Council, UK), USMLE Step 2 CS (Educational Commission for Foreign Medical Graduates, USA)
                 </p>
                 <div className={styles.actionButtons}>
-                        <button className={styles.downloadCvBtn} onClick={handleDownloadCV}>
-                            Download CV
-                        </button>
-                        <button className={styles.sendMessageBtn} onClick={handleSendMessage}>
-                            Send Message   →
-                        </button>
-                    </div>
-                    
+                    <button className={styles.downloadCvBtn} onClick={handleDownloadCV}>
+                        Download CV
+                    </button>
+                    <button className={styles.sendMessageBtn} onClick={handleSendMessage}>
+                        Send Message   →
+                    </button>
+                </div>
+
                 <div className={styles.buttonContainer}>
-                <p>Dr. Syed Zohaib Maroof Hussain is a British-trained ENT Surgeon specializing in advanced Otolaryngology techniques, currently based in Leicester, UK.</p>
+                    <p>Dr. Syed Zohaib Maroof Hussain is a British-trained ENT Surgeon specializing in advanced Otolaryngology techniques, currently based in Leicester, UK.</p>
                     <button
                         className={styles.readBioBtn}
                         onClick={() => setBioOpen(!bioOpen)}
                     >
                         {bioOpen ? 'Hide' : 'Testimonial\t→'}
                     </button>
-                    
                 </div>
-                
-                {bioOpen && (
-    <div className={styles.bioContent}>
-        <h2 style={{ marginBottom: '16px' }}>Dr. Syed Zohaib Maroof Hussain, MBBS, MRCS, PLAB, USMLE Step 2 CS</h2>
-        <p style={{ marginBottom: '16px' }}>
-            <strong>Dr. Syed Zohaib Maroof Hussain</strong> is a distinguished ENT Surgeon with a stellar academic and professional trajectory. He completed his <strong>MBBS</strong> at Dow University of Health Sciences in Pakistan, where his passion for Otolaryngology was first ignited.
-        </p>
-        <p style={{ marginBottom: '16px' }}>
-            Driven by a commitment to excellence, Dr. Hussain pursued advanced training in ENT, earning the <strong>MRCS</strong> from the Royal College of Surgeons of Edinburgh and <strong>PLAB</strong> certification from the General Medical Council of the UK.
-        </p>
-        <p style={{ marginBottom: '16px' }}>
-            Currently, Dr. Hussain serves as a <strong>Core Surgical Trainee</strong> at the University Hospitals of Leicester NHS Trust, where he is honing his expertise in Otolaryngology. His qualifications are complemented by the <strong>USMLE Step 2 CS</strong>, underscoring his broad competency in clinical skills.
-        </p>
-        <p style={{ marginBottom: '16px' }}>
-            Dr. Hussain's career is marked by a relentless pursuit of knowledge and a dedication to integrating cutting-edge research with clinical practice. His approach to patient care is both <strong>comprehensive and empathetic</strong>, focusing on delivering the highest standards of treatment while addressing the holistic needs of his patients.
-        </p>
-        <p style={{ marginBottom: '16px' }}>
-            With a robust foundation in both clinical practice and research, Dr. Hussain is poised to make significant contributions to the field of Otolaryngology. His commitment to advancing medical practice, combined with his passion for teaching and leadership, sets him apart as a future leader in ENT surgery.
-        </p>
-    </div>
-)}
 
-
-            </div>
             
-            <img src={getImageUrl('hero/zohaib bhai.jpg')} alt="hero image of me" className={styles.heroImg}/>
-            <div className={styles.topblur}/>
-            <div className={styles.bottomblur}/>
+
+            {bioOpen && (
+               <div className={styles.bioContent}>
+               <h2 style={{ marginBottom: '16px' }}>Dr. Syed Zohaib Maroof Hussain, MBBS, MRCS, PLAB, USMLE Step 2 CS</h2>
+               <p style={{ marginBottom: '16px' }}>
+                   <strong>Dr. Syed Zohaib Maroof Hussain</strong> is a leading ENT Surgeon with an MBBS from Dow University of Health Sciences and advanced qualifications including <strong>MRCS</strong>, <strong>PLAB</strong>, and <strong>USMLE Step 2 CS</strong>.
+               </p>
+               <p style={{ marginBottom: '16px' }}>
+                   He is currently a <strong>Core Surgical Trainee</strong> at the University Hospitals of Leicester NHS Trust, where he is enhancing his expertise in Otolaryngology.
+               </p>
+               <p style={{ marginBottom: '16px' }}>
+                   Dr. Hussain is dedicated to integrating innovative research with high-quality patient care and is committed to advancing the field of ENT surgery through his clinical and academic work.
+               </p>
+           </div>
+           
+            
+            )}
+           </div>
+
+
+
+
+            <img src={getImageUrl('hero/zohaib bhai.jpg')} alt="hero image of me" className={styles.heroImg} />
+            <div className={styles.topblur} />
+            <div className={styles.bottomblur} />
         </section>
     );
 }
