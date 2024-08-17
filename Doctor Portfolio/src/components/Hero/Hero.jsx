@@ -51,7 +51,9 @@ export const Hero = () => {
             
 
             {bioOpen && (
+                
                <div className={styles.bioContent}>
+                
                <h2 style={{ marginBottom: '16px' }}>Dr. Syed Zohaib Maroof Hussain, MBBS, MRCS, PLAB, USMLE Step 2 CS</h2>
                <p style={{ marginBottom: '16px' }}>
                    <strong>Dr. Syed Zohaib Maroof Hussain</strong> is a leading ENT Surgeon with an MBBS from Dow University of Health Sciences and advanced qualifications including <strong>MRCS</strong>, <strong>PLAB</strong>, and <strong>USMLE Step 2 CS</strong>.
@@ -62,6 +64,7 @@ export const Hero = () => {
                <p style={{ marginBottom: '16px' }}>
                    Dr. Hussain is dedicated to integrating innovative research with high-quality patient care and is committed to advancing the field of ENT surgery through his clinical and academic work.
                </p>
+               
            </div>
            
             
@@ -69,7 +72,7 @@ export const Hero = () => {
            </div>
 
 
-
+         
 
             <img src={getImageUrl('hero/zohaib bhai.jpg')} alt="hero image of me" className={styles.heroImg} />
             <div className={styles.topblur} />
