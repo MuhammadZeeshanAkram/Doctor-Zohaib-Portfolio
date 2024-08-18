@@ -1,17 +1,17 @@
 import React from 'react';
-import projects from '../../data/projects.json';
+import researches from '../../data/history2.json';
 import styles from "./Projects.module.css";
 import { ProjectCard } from './ProjectCard';
 
 export const Projects = () => {
   return (
-    <section className={styles.container} id='projects'>
+    <section className={styles.container} id='researches'>
         <h2 className={styles.title}>
-            Projects
+            Research
         </h2>
-        <div className={styles.projects}>{projects.map((project,id)=>{
+        <div className={styles.researches}>{researches.map((research,id)=>{
             return(
-                <ProjectCard key={id} project={project}/>
+                <ProjectCard key={id} research={research}/>
             )
         })}</div>
         
