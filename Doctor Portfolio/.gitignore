@@ -28,6 +28,6 @@ dist-ssr
 
 # Ignore the contact folder
 /contact/
-
+/public/
 # Ignore specific data files (example)
 /data/*.json
