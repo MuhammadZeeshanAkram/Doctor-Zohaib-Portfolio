@@ -1,62 +1,136 @@
-@import"../../vars.css";
-
-.container{
-    color:var(--color-text);
-    margin-top: 120px;
-    background-color: var(--color-secondary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100vw;
-    padding: 58px 10%;
-    gap: 10px;
-
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #001c38;
+  border-top: 1px solid #151f29;
 }
-.text h2{
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: 4px;
 
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  font-weight: 700;
+  min-width: 250px; /* Ensures columns don’t get too narrow */
 }
-.text p{
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 2px;
+
+.column h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center; /* Centers the heading on smaller screens */
+  color: white;
 }
-.links{
-    display: flex;
+
+.menu {
+  font-weight: 600;
+  text-align: center; /* Centers menu items on smaller screens */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #e7dada;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #274568;
+}
+
+.links {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+  text-align: center; /* Centers links on smaller screens */
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the content within the link item */
+  margin: 10px 0;
+}
+
+.link .icon {
+  margin-right: 15px; /* Space between icon and text */
+  font-size: 24px; /* Icon size */
+  color: white;
+  padding: 4px;
+}
+
+.link a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.link a:hover {
+  color: #274568;
+}
+
+.link span {
+  font-size: 18px;
+  color: #f0f2f5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
-    gap: 26px;
-}
-.link{
-    display: flex;
     align-items: center;
-    gap: 25px;
+  }
 
+  .column {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+
+  .links {
+    margin-left: 0;
+  }
+
+  .link {
+    flex-direction: row; /* Keep icon and text on the same line */
+    justify-content: flex-start; /* Align items to the start */
+  }
+
+  .link .icon {
+    margin-right: 10px; /* Space to the right of the icon */
+  }
 }
-.link a{
-    color: var(--color-text);
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-}
 
+@media (max-width: 480px) {
+  .column h2 {
+    font-size: 24px; /* Smaller heading size */
+    margin-bottom: 20px; /* Reduced margin */
+  }
 
-@media  screen and (max-width: 830px) {
-    .container{
-        flex-direction: column;
-        gap: 23px;
-    }
-    .text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .links{
-        align-items: center;
-    }
+  .menu ul li a {
+    font-size: 18px; /* Smaller font size for menu items */
+  }
+
+  .link a {
+    font-size: 16px; /* Smaller font size for link text */
+  }
+
+  .link span {
+    font-size: 16px; /* Smaller font size for spans */
+  }
 }

@@ -1,28 +1,37 @@
 import React from 'react';
-import { getImageUrl } from '../../utils';
 import styles from './Contact.module.css';
+import { MdOutlineEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export const Contact = () => {
   return (
     <footer className={styles.container} id='contact'>
-      <div className={styles.text}>
-        <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
+      <div className={styles.column}>
+        <h2>Menu</h2>
+        <nav className={styles.menu}>
+          <ul>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#experience">Experience</a></li>
+            
+            <li><a href="#researches">Research</a></li>
+            
+            
+          </ul>
+        </nav>
       </div>
-      <ul className={styles.links}>
-        <li className={styles.link}>
-          <img src={getImageUrl('contact/emailIcon.png')} alt="Email icon" />
-          <a href="mailto:zohaibbhai@gmail">mailto:zohaibbhai@gmail</a>
-        </li>
-        <li className={styles.link}>
-          <img src={getImageUrl('contact/linkedinIcon.png')} alt="Linkedin icon"  />
-          <a href="https://www.linkedin.com/in/zohaibbhai">linkedin.com/myname</a>
-        </li>
-        <li className={styles.link}>
-          <img src={getImageUrl('contact/githubIcon.png')} alt="Github icon"  />
-          <a href="https://github.com/zohaibbhai">github.com/zohaibbhai</a>
-        </li>
-      </ul>
+      <div className={styles.column}>
+        <h2>Contact</h2>
+        <ul className={styles.links}>
+          <li className={styles.link}>
+            <MdOutlineEmail className={styles.icon} />
+            <a href="mailto:syedzohaibmaroof@hotmail.com ">syedzohaibmaroof@hotmail.com </a>
+          </li>
+          <li className={styles.link}>
+            <FaPhoneAlt className={styles.icon} />
+            <a href="tel:+44 7304 030963">+44 7304 030963</a> {/* Make sure to replace with actual contact number */}
+          </li>
+        </ul>
+      </div>
     </footer>
-  )
+  );
 }
