@@ -9,6 +9,13 @@ export const Projects = () => {
         <h2 className={styles.title}>
             Research
         </h2>
+        <a 
+          href="https://www.researchgate.net/profile/Syed-Maroof" 
+          className={styles.researchLink} 
+          target="_blank" 
+          rel="noopener noreferrer">
+          Visit ResearchGate Profile
+        </a>
         <div className={styles.researches}>{researches.map((research,id)=>{
             return(
                 <ProjectCard key={id} research={research}/>

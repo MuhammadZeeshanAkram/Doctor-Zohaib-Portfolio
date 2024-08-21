@@ -6,7 +6,7 @@
     justify-content: space-between;
     margin-top: 49px;
     z-index: 1;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.479) 0%, rgba(0, 0, 0, 0.152) 70%);
+    background: radial-gradient(circle, rgba(254, 254, 254, 0.479) 0%, rgba(0, 0, 0, 0.025) 70%);
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2px;
@@ -33,19 +33,21 @@
     -webkit-background-clip: text;
 }
 .title p {
-    font-size: 18px; /* Adjust size as needed */
-    margin: 0;
+    font-size: 20px; /* Adjust size as needed */
+    margin: 2%;
+    margin-left: 0%;
     letter-spacing: 2px; /* Remove default margin if needed */
 }
 
 .description {
     margin-left: 60px;
     margin-right: 17px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: var(--font-roboto);
-    font-weight: 520;
+    font-weight: 580;
     letter-spacing: 2px;
-    margin-bottom: 20%;
+    margin-top: -3%;
+    margin-bottom: 10%;
 }
 
 .buttonContainer {
@@ -54,7 +56,7 @@
     display: flex;
     font-size: 120%;
     align-items: center;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     gap: 20px;
     margin-top: -2px;
     margin-left: 4%;
@@ -86,6 +88,7 @@
 .actionButtons {
     display: flex;
     gap: 5px;
+    margin-bottom: 8%;
 }
 
 .actionButtons button {
@@ -109,7 +112,7 @@
 .bioContent {
     margin-top: 2px;
     background-color: rgba(13, 14, 22, 0.359);
-    animation: slideDown 6s ease-out;
+    animation: slideDown 3s ease-out;
     padding: 15px 30px;
     margin-left: 2%;
     margin-right: -100%;
@@ -236,8 +239,9 @@
 
     .actionButtons {
         flex-direction: column;
+        margin-top: -76px;
         gap: 10px;
-        width: 50%;
+        width: 40%;
         align-items: center;
     }
 

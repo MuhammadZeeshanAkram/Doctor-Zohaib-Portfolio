@@ -3,7 +3,7 @@
 .container {
     color: var(--color-text);
     margin-top: 30px;
-    margin-left: 5%;
+    margin-left: 4%;
 }
 
 .title {
@@ -34,10 +34,10 @@
     flex-direction: row;
     align-items: center;
     gap: 17px;
-    background: #19376d;
-    background: linear-gradient(90deg, #19376d 0%, rgba(25,55,109,0) 100%);
+    background: #2c436a;
+    background: linear-gradient(90deg, rgba(116, 115, 183, 0.178) 0%, rgba(120, 139, 172, 0.027) 100%);
     border-radius: 10px;
-    padding: 15px;
+    padding: 12px;
 }
 
 .historyItem img {
@@ -66,7 +66,7 @@
     list-style-position: inside;
     font-size: 17px;
     list-style-type: disc;
-    margin-left: 10px;
+    margin-left: -10px;
 }
 .historyContainer {
     display: flex;
@@ -79,7 +79,7 @@
     margin-top: 20px; /* Adds some spacing above the button */
 }
 .showMoreBtn {
-    background-color: var(--color-primary);
+    background-color: rgba(37, 36, 81, 0.178);
     color: white;
     border: none;
     border-radius: 5px;
@@ -96,7 +96,7 @@
 }
 
 .showMoreBtn:hover {
-    background-color: var(--color-primary-dark);
+    background-color: rgba(234, 234, 243, 0.192);
     transform: scale(1.05);
 }
 

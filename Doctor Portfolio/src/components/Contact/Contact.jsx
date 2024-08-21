@@ -10,6 +10,7 @@ export const Contact = () => {
         <h2>Menu</h2>
         <nav className={styles.menu}>
           <ul>
+          <li><a href="#">Home</a></li>
             <li><a href="#biography">Biography</a></li>
             <li><a href="#experience">Experience</a></li>
             

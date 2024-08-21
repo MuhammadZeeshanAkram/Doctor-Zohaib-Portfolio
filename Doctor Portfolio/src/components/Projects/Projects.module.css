@@ -24,3 +24,20 @@
     gap: 15px;
     width: 100%;
 }
+
+.researchLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #f6f8f9; /* LinkedIn-like blue color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  background-color: red;
+}
+
+.researchLink:hover {
+  color: #005582; /* Darker blue for hover effect */
+  text-decoration: none;
+}
+

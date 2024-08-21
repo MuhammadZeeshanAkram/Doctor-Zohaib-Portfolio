@@ -4,7 +4,6 @@
     "organisation": "Health Education West Midlands",
     "startDate": "October 2024",
     "endDate": "October 2030",
-    "experiences": [],
     "imageSrc": "history/health_education_west_midlands.jpg"
   },
   {
@@ -12,40 +11,13 @@
     "organisation": "Sherwood Forest Hospitals NHS Foundation Trust",
     "startDate": "December 2023",
     "endDate": "Present",
-    "experiences": [],
     "imageSrc": "history/sherwood_forest_hospitals_nhs.png"
   },
   {
-    "role": "Core Surgical Trainee Oral and Maxillofacial Surgery",
-    "organisation": "University Hospitals of Leicester NHS Trust",
-    "startDate": "July 2023",
-    "endDate": "November 2023",
-    "experiences": [
-        "Job involves clinical duties in ENT at CT2 level",
-        "Attending clinics, theatres and independent on calls"
-    ],
-    "imageSrc": "history/university_hospitals_leicester.png"
-  },
-  {
-    "role": "Core Surgical Trainee Plastics Surgery",
-    "organisation": "University Hospitals of Leicester NHS Trust",
-    "startDate": "March 2023",
-    "endDate": "July 2023",
-    "experiences": [
-        "Job involves clinical duties in ENT at CT2 level",
-        "Attending clinics, theatres and independent on calls"
-    ],
-    "imageSrc": "history/university_hospitals_leicester.png"
-  },
-  {
-    "role": "Core Surgical Trainee ENT",
+    "role": "Core Surgical Trainee in ENT, Plastics Surgery, and Oral and Maxillofacial Surgery",
     "organisation": "University Hospitals of Leicester NHS Trust",
     "startDate": "November 2022",
-    "endDate": "March 2023",
-    "experiences": [
-        "Job involves clinical duties in ENT at CT2 level",
-        "Attending clinics, theatres and independent on calls"
-    ],
+    "endDate": "November 2023",
     "imageSrc": "history/university_hospitals_leicester.png"
   },
   {
@@ -53,10 +25,6 @@
     "organisation": "Northwest Anglia NHS Foundation Trust",
     "startDate": "September 2022",
     "endDate": "November 2022",
-    "experiences": [
-        "Job involves clinical duties in ENT at CT2 level",
-        "Attending clinics, theatres and independent on calls"
-    ],
     "imageSrc": "history/northwest_anglia_nhs.png"
   },
   {
@@ -64,10 +32,6 @@
     "organisation": "Norfolk and Norwich University Hospitals NHS",
     "startDate": "August 2021",
     "endDate": "September 2022",
-    "experiences": [
-        "Clinical job in ENT at CT2 level (including on-call cover for plastics surgery)",
-        "Confident in dealing with plastics surgery emergencies"
-    ],
     "imageSrc": "history/norfolk_norwich_nhs.png"
   },
   {
@@ -75,10 +39,6 @@
     "organisation": "Norfolk and Norwich University Hospitals NHS",
     "startDate": "October 2020",
     "endDate": "August 2021",
-    "experiences": [
-        "Confident in tonsillectomy, MUA fracture nasal bones, M/L and VC biopsies (under supervision)",
-        "Exposure to all aspects of ENT, including Head and neck cancer surgery, laser procedures, bone conducting hearing implant surgery and FESS"
-    ],
     "imageSrc": "history/norfolk_norwich_nhs.png"
   },
   {
@@ -86,9 +46,6 @@
     "organisation": "Tabba Heart Institute (THI), Karachi, Pakistan",
     "startDate": "March 2020",
     "endDate": "August 2020",
-    "experiences": [
-        "Additional skills: PCI, central line, PICC line, angiography"
-    ],
     "imageSrc": "history/tabba_heart_institute.jpg"
   },
   {
@@ -96,11 +53,6 @@
     "organisation": "LCMD, JSMU, Pakistan",
     "startDate": "October 2018",
     "endDate": "July 2020",
-    "experiences": [
-        "Deliver tutorials, taking practical and case-based learning sessions to undergraduate students of 1st & 2nd year",
-        "Actively involved in examination department including designing theory and OSPE papers for 1st & 2nd year",
-        "Conducted online lectures during COVID-19"
-    ],
     "imageSrc": "history/lcmd_jsmu.jpg"
   },
   {
@@ -108,10 +60,6 @@
     "organisation": "Department of Surgery, Aga Khan University Hospital, Pakistan",
     "startDate": "October 2018",
     "endDate": "May 2020",
-    "experiences": [
-        "Developed skills in study design, creating structured proforma, ethical approval process, literature search, data collection/entry/analyzing using SPSS, manuscript writing",
-        "Wrote and published various articles on topics like cancer, cataract, retinal breaks, ocular syphilis, neuro-ophthalmology, multi-modal imaging, and retinal detachment"
-    ],
     "imageSrc": "history/aga_khan_university.png"
   },
   {
@@ -119,10 +67,6 @@
     "organisation": "Department of Emergency Medicine, Aga Khan University Hospital, Pakistan",
     "startDate": "March 2014",
     "endDate": "",
-    "experiences": [
-        "Learnt how to make proforma and did data collection for a research project",
-        "Attended sessions on manuscript writing, literature search, and data analysis"
-    ],
     "imageSrc": "history/aga_khan_university.png"
   },
   {
@@ -130,9 +74,6 @@
     "organisation": "Essa Laboratory, Karachi, Pakistan",
     "startDate": "October 2013",
     "endDate": "December 2013",
-    "experiences": [
-        "Wrote and published one research article on the prevalence of typhoid fever in Karachi, Pakistan"
-    ],
     "imageSrc": "history/essa_laboratory.jpg"
   },
   {
@@ -140,13 +81,6 @@
     "organisation": "JPMC, Karachi, Pakistan",
     "startDate": "June 2017",
     "endDate": "August 2018",
-    "experiences": [
-        "Trauma and Orthopedics",
-        "General Surgery",
-        "Internal Medicine/ICU",
-        "Dermatology",
-        "Oncology & Hematology"
-    ],
     "imageSrc": "history/jpmc.jpg"
   }
 ]
