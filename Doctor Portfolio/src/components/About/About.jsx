@@ -38,12 +38,7 @@ export const About = () => {
     <section className={styles.container} id="biography">
       <h2 className={styles.title} data-aos="fade-down">Biography</h2>
       <div className={styles.content}>
-        <img
-          src={images[currentImage]}
-          alt="Dr. Syed Zohaib Maroof Hussain"
-          className={styles.aboutImage}
-          data-aos="zoom-in" // Zoom-in animation for the image
-        />
+       
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem} onClick={() => handleClick('academic')} data-aos="fade-right">
             <div className={styles.aboutItemText}>

@@ -87,7 +87,7 @@ export const Hero = () => {
             </div>
 
             <img
-                src={getImageUrl('hero/zohaib bhai.jpg')}
+                src={getImageUrl('hero/photo.jpg')}
                 alt="hero image of Dr. Syed Zohaib Maroof Hussain"
                 className={styles.heroImg}
                 data-aos="zoom-in-up"
